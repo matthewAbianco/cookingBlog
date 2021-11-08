@@ -1,0 +1,36 @@
+{
+  "name": "cookingblog",
+  "version": "1.0.0",
+  "description": "~~~ made following a youtube video by RaddyTheBrand ~~~\r https://www.youtube.com/watch?v=OEdPH4fV7vY&t=1s",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewAbianco/cookingBlog.git",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewAbianco/cookingBlog/issues"
+  },
+  "homepage": "https://github.com/matthewAbianco/cookingBlog#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-fileupload": "^1.2.1",
+    "express-session": "^1.17.2",
+    "mongodb": "^4.1.4",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}

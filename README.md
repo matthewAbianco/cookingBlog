@@ -1,4 +1,5 @@
-~~~ made following a youtube video ~~~
+~~~ made following a youtube video by RaddyTheBrand ~~~
+https://www.youtube.com/watch?v=OEdPH4fV7vY&t=1s
 
 This is a Cooking Blog where users can create and view recipies made by other people. 
 
