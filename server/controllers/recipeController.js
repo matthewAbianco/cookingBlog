@@ -15,6 +15,7 @@ exports.homepage = async(req, res) => {
       const chinese = await Recipe.find({ 'category': 'Chinese' }).limit(limitNumber)
       const american = await Recipe.find({ 'category': 'American' }).limit(limitNumber)
 
+
       const food = { latest, thai, american, chinese } 
 
          res.render('index', { title: 'Cooking Blog - Home', categories, food } );
@@ -23,6 +24,20 @@ exports.homepage = async(req, res) => {
     }
 
 }
+
+// GET recipe/:id
+
+exports.exploreRecipe = async(req, res) => {
+    try {   
+        let recipeId = req.params.id
+        const recipe = await Recipe.findById(recipeId)
+           res.render('recipe', { title: 'Cooking Blog - Recipe', recipe} );
+      } catch (error) {
+          res.status(500).send({ message: error.message || "Error Occured" })
+      }
+    
+    }
+
 
 // GET Categories
 
