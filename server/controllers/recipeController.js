@@ -78,7 +78,6 @@ exports.searchRecipe = async (req, res) => {
         res.status(500).send({message: error.message || "Error Occured"})
     }
 
-    res.render('search', {title: 'Cooking Blog - Search'})
 }
 
 
