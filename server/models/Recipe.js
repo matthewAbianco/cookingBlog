@@ -26,6 +26,9 @@ const recipeSchema = new mongoose.Schema ({
         type: String,
         required: true
     }
-})
+});
+
+recipeSchema.index({ name: 'text', description: 'text' })
+// WldCard
 
 module.exports = mongoose.model('Recipe', recipeSchema);

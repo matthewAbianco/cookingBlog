@@ -38,7 +38,6 @@ exports.exploreRecipe = async(req, res) => {
     
     }
 
-
 // GET Categories
 
 exports.exploreCategories = async(req, res) => {
@@ -51,6 +50,119 @@ try {
   }
 
 }
+
+// GET /categories/:id
+
+exports.exploreCategoriesById = async(req, res) => { 
+    try {
+      let categoryId = req.params.id;
+      const limitNumber = 20;
+      const categoryById = await Recipe.find({ 'category': categoryId }).limit(limitNumber);
+      res.render('categories', { title: 'Cooking Blog - Categoreis', categoryById } );
+    } catch (error) {
+      res.satus(500).send({message: error.message || "Error Occured" });
+    }
+  } 
+
+// POST search recipe
+
+exports.searchRecipe = async (req, res) => {
+
+    // Search term
+    try {
+        let searchTerm = req.body.searchTerm;
+        let recipe = await Recipe.find({$text: { $search: searchTerm, $diacriticSensitive: true } })
+        res.render('search', {title: 'Cooking Blog - Search', recipe})
+}
+     catch (error) {
+        res.status(500).send({message: error.message || "Error Occured"})
+    }
+
+    res.render('search', {title: 'Cooking Blog - Search'})
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // async function insertDummyRecipeData(){
 //   try {
