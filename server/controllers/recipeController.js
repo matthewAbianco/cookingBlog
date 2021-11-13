@@ -168,7 +168,29 @@ exports.submitRecipeOnPost = async (req, res) => {
     }
 }
 
+// async function updateRecipe() {
+//     try {
+//         const res = await Recipe.updateOne({ name: 'New Recipe' }, { name: 'New Recipe Updated'} )
+//         res.n; // Number of documents matched
+//         res.nModified // Number of documents modified
+//     } catch (err) {
+//         console.log(err)
+//     }
+// }
 
+// updateRecipe()
+
+// async function deleteRecipe() {
+//     try {
+//          await Recipe.deleteOne({ name: 'New Recipe' })
+//         res.n; // Number of documents matched
+//         res.nModified // Number of documents modified
+//     } catch (err) {
+//         console.log(err)
+//     }
+// }
+
+// deleteRecipe()
 
 
 
