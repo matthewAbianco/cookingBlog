@@ -1,12 +1,42 @@
-~~~ made following a youtube video by RaddyTheBrand ~~~
-https://www.youtube.com/watch?v=OEdPH4fV7vY&t=1s
 
-This is a Cooking Blog where users can create and view recipies made by other people. 
+<h1>Cooking Blog</h1>
 
-I made this to get a better understanding of how to work with MongoDB and Mongoose. 
+![badge](https://img.shields.io/badge/license-MIT-blue)<br />
 
-This was also made using Bootstrap with an EJS layout.
+## <h2>Description</h2>
+  A website where users can upload and view recipies 
 
-Thanks for stopping by!
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-~Matt
+## Installation
+ download the zip fild and run "npm i" in the terminal
+
+## Usage
+ This app is for people who want to try something new to eat and can share their own creations
+
+## License
+![badge](https://img.shields.io/badge/license-MIT-darkyellow)
+<br/>
+This application is covered by the MIT license. 
+
+## Contributing
+ Add something tasty!
+
+## Tests
+ NA
+
+ ## Github
+ https://github.com/matthewAbianco?tab=repositories
+
+## <h2 >Questions</h2>
+ NA<br />
+ <br />
+ Email me with any questions: matthewbianco@protonmail.com<br/><br />
+  
